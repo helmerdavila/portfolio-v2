@@ -1,7 +1,7 @@
 <template lang="pug">
   nav.navbar.is-fixed-top(:class="{ 'is-scrolled': scrolled }")
     .navbar-brand
-      a.navbar-item(href="https://bulma.io")
+      a.navbar-item(href="/")
         i.fas.fa-h-square.fa-2x
       .navbar-burger.burger(data-target="navbarExampleTransparentExample")
         span
@@ -17,7 +17,7 @@
         .navbar-item
           .field.is-grouped
             p.control
-              a.button.is-primary(href="https://github.com/jgthms/bulma/archive/0.5.1.zip", :class="{ 'is-inverted': !scrolled, 'is-outlined': !scrolled }")
+              a.button.is-primary(href="https://www.dropbox.com/s/xubgx2iei31njza/Helmer_CV.pdf?dl=0", :class="{ 'is-inverted': !scrolled, 'is-outlined': !scrolled }")
                 span.icon
                   i.fas.fa-download
                 span Download CV

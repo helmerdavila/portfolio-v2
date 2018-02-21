@@ -9,21 +9,28 @@
             i.fab.fa-chrome.fa-3x.fa-fw
           .content
             h3 Frontend Development
-            p Code useful and dynamic interfaces with cross-browser compatibility.
+            p
+             | I design in the browser with HTML(5), CSS(3) and a touch of JavaScript.
+             | I love coding things from scratch, but I can work with front-end CSS
+             | frameworks like Bootstrap or Bulma too.
       .column
         .service.has-text-centered
           span.the-icon
             i.fas.fa-code.fa-3x.fa-fw
           .content
             h3 Backend Development
-            p Code the requirements and restrictions for the business.
+            p
+              | Code the requirements and restrictions for the business, using backend frameworks
+              | with good scalability option and quick development of new features.
       .column
         .service.has-text-centered
           span.the-icon
             i.fas.fa-server.fa-3x.fa-fw
           .content
-            h3 Server deployment
-            p Upload new changes in my apps with tools for automated deployments.
+            h3 Server management
+            p
+              | Upload new changes in apps with tools for automated deployments. Setting
+              | testing and production environments, avoiding security mistakes.
 </template>
 
 <style lang="stylus">

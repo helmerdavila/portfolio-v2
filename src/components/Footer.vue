@@ -2,10 +2,12 @@
   .footer
     .container
       .content.has-text-centered
-        a.rounded-link
+        a.rounded-link(href="https://www.linkedin.com/in/helmerdavila/" target="_blank")
           i.fab.fa-linkedin-in.fa-fw
+        a.rounded-link(href="https://www.github.com/helmerdavila/" target="_blank")
+          i.fab.fa-github.fa-fw
         p
-          span &copy
+          span &copy Handmade by me
           span {{ ` ${actualDate}` }}
 </template>
 
