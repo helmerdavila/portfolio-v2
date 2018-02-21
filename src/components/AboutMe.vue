@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.section
+  section#helmer-aboutme.section
     .container
       h1.title.is-1.has-text-centered About me
       p

@@ -3,27 +3,31 @@
     .navbar-brand
       a.navbar-item(href="/")
         i.fas.fa-h-square.fa-2x
-      .navbar-burger.burger(data-target="navbarExampleTransparentExample")
+      .navbar-burger.burger(@click="menuIsActive = !menuIsActive")
         span
         span
         span
-    #navbarExampleTransparentExample.navbar-menu
+    .navbar-menu(:class="{ 'is-active': menuIsActive }")
       .navbar-start
-        a.navbar-item(href="#") Who am I
-        a.navbar-item(href="#") My stack
-        a.navbar-item(href="#") What I do
-        a.navbar-item(href="#") Experience
+        a.navbar-item(href="#" v-scroll-to="'#helmer-presentation'") Who am I
+        a.navbar-item(href="#" v-scroll-to="'#helmer-aboutme'") About me
+        a.navbar-item(href="#" v-scroll-to="'#helmer-whatido'") What I do
+        a.navbar-item(href="#" v-scroll-to="'#helmer-mystack'") My stack
       .navbar-end
         .navbar-item
           .field.is-grouped
             p.control
-              a.button.is-primary(href="https://www.dropbox.com/s/xubgx2iei31njza/Helmer_CV.pdf?dl=0", :class="{ 'is-inverted': !scrolled, 'is-outlined': !scrolled }")
+              a.button.is-primary(href="https://www.dropbox.com/s/xubgx2iei31njza/Helmer_CV.pdf?dl=0", :class="{ 'is-inverted is-outlined': !scrolled && !menuIsActive }")
                 span.icon
                   i.fas.fa-download
                 span Download CV
 </template>
 
 <style lang="stylus" scoped>
+.navbar-menu.is-active
+  a.navbar-item
+    color: black
+
 a.navbar-item
   color white
   &:hover
@@ -43,6 +47,7 @@ export default {
   data() {
     return {
       scrolled: false,
+      menuIsActive: false,
     };
   },
   methods: {

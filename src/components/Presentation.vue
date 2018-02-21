@@ -1,5 +1,5 @@
 <template lang="pug">
-  .section.hero.is-fullheight.first-section
+  #helmer-presentation.section.hero.is-fullheight.first-section
     Header
     .hero-body
       .overlay

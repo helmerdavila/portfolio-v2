@@ -1,5 +1,5 @@
 <template lang="pug">
-  .section
+  section#helmer-mystack.section
     .container
       h1.title.is-1.has-text-centered My stack
       .level
