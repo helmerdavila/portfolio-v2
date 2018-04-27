@@ -13,6 +13,7 @@
         a.navbar-item(href="#" v-scroll-to="'#helmer-aboutme'") About me
         a.navbar-item(href="#" v-scroll-to="'#helmer-whatido'") What I do
         a.navbar-item(href="#" v-scroll-to="'#helmer-mystack'") My stack
+        a.navbar-item(href="#" v-scroll-to="'#helmer-projects'") My projects
       .navbar-end
         .navbar-item
           .field.is-grouped
@@ -22,24 +23,6 @@
                   i.fas.fa-download
                 span Download CV
 </template>
-
-<style lang="stylus" scoped>
-.navbar-menu.is-active
-  a.navbar-item
-    color: black
-
-a.navbar-item
-  color white
-  &:hover
-    background-color transparent
-    color white
-
-.is-scrolled
-  background white
-  a.navbar-item
-    color black
-</style>
-
 
 <script>
 export default {

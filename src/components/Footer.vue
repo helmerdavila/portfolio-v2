@@ -11,21 +11,6 @@
           span {{ ` ${actualDate}` }}
 </template>
 
-<style lang="stylus">
-.footer
-  background black
-  color: white
-  .rounded-link
-    padding 0.5em
-    background white
-    color black
-    border-radius 50%
-    margin 0 0.5em
-  p
-    margin-top 20px
-</style>
-
-
 <script>
 export default {
   data() {
@@ -39,4 +24,3 @@ export default {
   },
 };
 </script>
-

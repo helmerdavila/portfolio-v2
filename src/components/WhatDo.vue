@@ -34,31 +34,36 @@
 </template>
 
 <style lang="stylus">
-@import '../stylus/variables'
+@import '../stylus/variables';
 
-.what-i-do
-  background-color #F0F0F0
+.what-i-do {
+  background-color: #F0F0F0;
 
-  h1.title
-    margin-bottom 1.5em
+  h1.title {
+    margin-bottom: 1.5em;
+  }
 
-  .service
-    width 100%
-    background white
-    border-radius 4px
-    padding 48px 20px
-    box-shadow 0px 0px 10px rgba(0, 0, 0, 0.2)
-    transition all 0.3s ease-in-out 0s
+  .service {
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    padding: 48px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out 0s;
 
-    &:hover
-      box-shadow 0px 0px 30px rgba(0, 0, 0, 0.2)
+    &:hover {
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    }
 
-    span.the-icon
-      display block
-      color primary-color
+    span.the-icon {
+      display: block;
+      color: primary-color;
+    }
 
-    h3
-      margin-top 1.5em
-      text-transform uppercase
+    h3 {
+      margin-top: 1.5em;
+      text-transform: uppercase;
+    }
+  }
+}
 </style>
-
